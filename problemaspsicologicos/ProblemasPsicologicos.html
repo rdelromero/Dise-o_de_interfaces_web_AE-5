@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas psicológicos</title>
+    <link rel="stylesheet" type="text/css" href="/archivoscomunes/csscomun.css">
+    <link rel="stylesheet" type="text/css" href="ProblemasPsicologicos.css">
+    <script src="https://kit.fontawesome.com/6b6b05dd37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="miHeaderContainer"></header>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miHeaderContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+
+    
+   <div id="divmain1">
+    <h2>Teraspias y problemas psicológicos</h2>
+    En Ayudaparati Tratamos una amplia gama de trastornos de ámbito psicológico. A continuación te mostramos un listado ordenado por categorías para que puedas acceder a información más detallada:
+   </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="trastornos-de-ansiedad.jpg" alt="Descripción de la imagen">
+            <div class="fondonaranja">Trastornos de ansiedad</div>
+            <ul class="ulmain">
+              <li class="limain">Ansiedad generalizada</li>
+              <li class="limain">Ataques de ansiedad</li>
+              <li class="limain">Estrés</li>
+              <li class="limain">Hipocondria</li>
+            </ul>
+            <br>
+            <div class="fondonaranja">Autoestima y habilidades sociales</div>
+          <ul class="ulmain">
+            <li class="limain">Falta de autoestima</li>
+            <li class="limain">Asertividad</li>
+            <li class="limain">Fovia social</li>
+          </ul>
+        </div>
+        <div class="box">
+          <div class="fondonaranja">Estados de ánimo</div>
+          <ul class="ulmain">
+            <li class="limain">Duelo patológico</li>
+            <li class="limain">Depresión</li>
+            <li class="limain">Trastorno bipolar</li>
+            <li class="limain">Trastorno adaptativo</li>
+          </ul>
+          <br>
+          <img src="desarrollo-personal.jpg" alt="Descripción de la imagen">
+          <div class="fondonaranja">Desarrollo personal</div>
+          <ul class="ulmain">
+            <li class="limain">Coaching</li>
+            <li class="limain">Gestión emocional</li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="miedos-y-fobias.jpg" alt="Descripción de la imagen">
+          <div class="fondonaranja">Miedos y fobias</div>
+          <ul class="ulmain">
+            <li class="limain">Zoofobia</li>
+            <li class="limain">Miedo a la muerte</li>
+            <li class="limain">Claustrofobia</li>
+            <li class="limain">Miedo escénico</li>
+          </ul>
+          <div class="fondonaranja">Adicciones</div>
+          <ul class="ulmain">
+            <li class="limain">Adicción al juego</li>
+            <li class="limain">Ludopatía</li>
+            <li class="limain">Claustrofobia</li>
+            <li class="limain">Adicción a las drogas</li>
+          </ul>
+        </div>
+    </div>
+    <br>
+
+
+    <footer id="miFooterContainer"></footer>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miFooterContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" type="text/css" href="/archivoscomunes/csscomun.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/6b6b05dd37.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Mismo header que el de index.html------------------------------------------------->
+    <header id="miHeaderContainer"></header>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miHeaderContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+    <!----------------------------------------------------------------------------------------------->
+
+    <section>
+        <img src="login-img-1.jpg" alt="Imagen 1" class="imagen">
+    <div id="centro">
+            <div class="cuadro-texto-login">
+            <br><br>
+            <h3>Inicia sesión</h3>
+            <br>
+                    <br>
+                    <label>Introduzca su correo electrónico</label>
+                    <input class="iMail" placeholder="  ...">
+                    <br><br>
+                    <label>Introduzca su contraseña</label>
+                    <input class="iPword" placeholder="  ...">
+                    <br><br>
+                    <input type="checkbox">
+                        <label>Acepto los términos y condiciones de uso</label>
+                    <br><br>
+                    <button type="submit" class="btnCrearAcc">Inicia sesión</button>
+        </div>
+    </div>
+        <img src="login-img-2.jpg" alt="Imagen 2" class="imagen">
+    </section>
+
+    <footer id="miFooterContainer"></footer>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miFooterContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+    
+</body>
+</html>

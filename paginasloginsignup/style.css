@@ -1,0 +1,128 @@
+.imagen {
+    border: 10px black; 
+    border-radius: 15px;     
+}
+
+.btnCrearAcc {
+    height: 40px;
+    width: 120px;
+    text-align: cen;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#3CEE83,yellow);
+}
+
+.iNombre {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+}
+
+.iMail {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+}
+
+.iTlf {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+}
+
+.iPword {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+}
+
+.SPAN1 {
+  font-weight: bolder;
+}
+
+.txtAyuda {
+    color: rgb(33, 163, 74);
+    text-align: center;
+}
+
+.Qterapia {
+
+     width: 90%;
+    justify-content: center;
+    background-color: #D3D3D3;
+    border-radius: 50px;
+
+}
+
+.iCodigoTlf {
+    width: 80%;
+    height: 40px;
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+   
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+}
+
+.imagen {
+    height: 400px;
+    width: 450px;
+}
+
+.cuadro-texto-login {
+    height: 400px;
+    width: 450px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #FFB366;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.imagenregistro {
+    height: 350px;
+    width: 400px;
+}
+
+.cuadro-texto-registro {
+    height: 450px;
+    width: 550px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #FFB366;
+    border: 4px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; 
+}
+
+#centro{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto-destacado{
+    font-size: 20px;
+}
+
+.btnCrearAccTlf {
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#ee3c3c,yellow);
+}

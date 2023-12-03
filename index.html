@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" type="text/css" href="archivoscomunes/csscomun.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/6b6b05dd37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="miHeaderContainer"></header>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miHeaderContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+
+    <section>
+        <img src="indeximg2.jpg" alt="Imagen 1" class="imagen">
+    <div id="centro">
+            <div class="div-cuadro-texto">
+            <h2>¡Bienvenido! </h2>
+            <p class="texto-destacado">Este es tu Espacio de Bienestar Mental en Línea.Nuestra plataforma de psicólogos online está diseñada para brindarte apoyo profesional desde la comodidad de tu hogar, adaptándonos a tu estilo de vida moderno.</p>
+            <h2>TU BIENESTAR ES NUESTRO OBJETIVO</h2>
+            <button class="btn-cuestionario">INICIAR CUESTIONARIO</button>
+        </div>
+    </div>
+        <img src="indeximg2.jpg" alt="Imagen 2" class="imagen">
+    </section>
+
+    <footer id="miFooterContainer"></footer>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miFooterContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" type="text/css" href="/archivoscomunes/csscomun.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/6b6b05dd37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Mismo header que el de index.html------------------------------------------------->
+    <header id="miHeaderContainer"></header>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miHeaderContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+    <!----------------------------------------------------------------------------------------------->
+
+    <section>
+        <img src="login-img-1.jpg" alt="Imagen 1" class="imagenregistro">
+    <div id="centro">
+            <div class="cuadro-texto-registro">
+            
+            <h3>Regístrate con tu teléfono</h3>
+            
+                    <label>Introduzca su número de teléfono</label>
+                    <input class="iTlf" placeholder="  ...">
+                    <br><br>
+                    <label>Introduzca su número de teléfono (otra vez)</label>
+                    <input class="iTlf" placeholder="  ...">
+                    <br><br>
+                    <label>Introduzca su futura contraseña</label>
+                    <input class="iPword" placeholder="  ...">
+                    <br><br>
+                    <label>Introduzca el código de seis dígitos recibido en su teléfono</label>
+                    <input class="iCodigoTlf" placeholder=" _ _ _ - _ _ _">
+                    <br><br>
+                    <label>¿Qué problema quieres tratar en terapia?</label>
+                    <br>
+                    <input class="Qterapia" placeholder="Por ejemplo: Problemas de pareja">
+                    <br><br>
+                    <h7 class="txtAyuda">Recuerda, vamos a ayudarte, pero <span class="SPAN1">el cambio está en tu mano.</span></h7>
+                    <br>
+                    <input type="checkbox">
+                    <label>Acepto los términos y condiciones de uso</label>
+                    <br><br>
+                    <button type="submit" class="btnCrearAcc">Crea tu cuenta</button>
+        </div>
+    </div>
+        <img src="login-img-2.jpg" alt="Imagen 2" class="imagenregistro">
+    </section>
+
+
+    <footer id="miFooterContainer"></footer>
+    <script>
+      // Cargar el contenido del div desde otro archivo
+      fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('miFooterContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+    </script>
+    
+</body>
+</html>

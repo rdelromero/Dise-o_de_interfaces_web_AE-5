@@ -1,0 +1,171 @@
+/*-------------------------------------Header----------------------------*/
+a {
+    text-decoration: none;
+}
+
+.acolorregistro {
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #FFB366;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+#div_logo {
+    padding: 10px;
+}
+
+.img_logo{
+    height: 80px;
+    width: 80px;
+}
+
+.botonheader{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#3CEE83,white);
+    border: 0px;
+    cursor: pointer;
+}
+
+.botones-header{
+    display: flex;
+    align-items: center;
+}
+
+.div_search_box{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    display: flex;
+}
+
+.div_search_box .input{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: black;
+    background-color: #D3D3D3;
+}
+
+.div_search_box .div_lupa {
+    width: 60px;
+    height: 100%;
+    background-color: #D3D3D3;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.div_search_box .div_lupa:hover{
+    background: #708bd2;    
+}
+
+.div_search_box .div_lupa .fa{
+    position: absolute;
+    top: 50%;
+    left: 240px;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 20px;
+}
+
+.botonheader2{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#3CEE83,white);
+    border: 0px;
+    cursor: pointer;
+    margin-left: 140px;
+}
+
+.botones-header2{
+    display: flex;
+    align-items: center;
+}
+
+.botonheader3{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    cursor: pointer;
+}
+
+.botones-header button,
+.botonheader2 {
+    background: linear-gradient(to bottom, #3CEE83, white);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.botones-header button:hover,
+.botonheader2:hover,
+.botonheader3:hover {
+    background: #3CEE83;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*-----------------------------------Footer------------------------------------------------------*/
+
+footer {
+    background: linear-gradient(to bottom,#ADD8E6,white);
+    color: black;
+    justify-content: space-around;
+    position: relative;
+    /*display: flex;*/
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    border-bottom: 1px solid black;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: #3CEE83;
+}
